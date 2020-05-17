@@ -17,6 +17,6 @@ class String
   def count_sentences
     temp = self.split(/\W+/)
     temp.delete_if{|e| e.length == 0}
-    self.length
+    temp.length
   end
 end

@@ -15,7 +15,8 @@ class String
   end
 
   def count_sentences
-    temp = self.split(/[\w'-]+|[[:punct:]]+/)
+    temp = self.split(/[\., "?", "!"]/)
+    binding.pry
     temp.delete_if{|e| e.length == 0}
     temp.length
   end
